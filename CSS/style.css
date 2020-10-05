@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+}
+/* Style the header */
+.header {
+    background-color: #13991a;
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+  
+/* Left and right column */
+.column.side {
+    width: 26%;
+    margin: 2%;
+}
+  
+/* Middle column */
+.column.middle {
+    width: 66%;
+    margin: 2%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+/* Style table*/
+#items {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+#items td, #items th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#items td{
+    font-size: x-large;
+}
+#items th{
+    font-size: xx-large;
+}
+#items td:nth-child(3){text-align: center;}
+#items tr:nth-child(even){background-color: #f2f2f2;}
+#items tr:hover {background-color: #ddd;}
+#items th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.reloj{
+    background-color: aqua;
+    border-radius: 30px;
+    font-size: x-large;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;;
+}
+.carrito{
+    border: 5px solid black;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+#nuevo-producto{
+    border: 5px solid black;
+    padding: 15px;
+    margin-bottom: 50px;
+}

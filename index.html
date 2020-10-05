@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/demo.js"></script>
+    <title>Document</title>
+</head>
+<body onload="reloj(),productos()"> <!-- onload="reloj()" -->
+    <div class="header">
+        <h1>BONSAI ONLINE</h1>
+    </div>
+    <div class="row">
+        <div class="column middle">
+            <!-- Elementos generados a partir del JSON -->
+            <table id="items">
+                <tr>
+                    <th>Artículo</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </table>
+          </div>
+        <!-- Carrito -->
+        <div class="column side">
+            <div class="reloj">
+                <p id="fecha"></p>
+                <p id="reloj"></p>
+            </div>
+            <div class="carrito">
+                <h2 style="text-align: center;">Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p>Total: $<span id="total"></span></p>
+                <button id="boton-vaciar">Vaciar</button>
+            </div>
+            <div id="nuevo-producto">
+                <h2 style="text-align: center;">Añadir producto</h2>
+                <form>
+                    <label for="article">Artículo:</label><br>
+                    <input type="text" id="articulo" name="article" required minlength="3" maxlength="10"><br>
+                    <label for="price">Precio:</label><br>
+                    <input type="text" id="precio" name="price" required><br><br>
+                    <input type="submit" id="boton-nuevo" value="Submit">
+                </form>
+            </div> 
+        </div>
+    </div>  
+    <div class="footer">
+        <p>Footer</p>
+    </div> 
+</body>
+</html>
